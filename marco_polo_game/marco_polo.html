@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Marco Polo Game</title>
+	  <meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Marco Polo Game Output : 1 to 100</h1>
+		<div id="marco-polo"></div>
+
+
+<script type="text/javascript">
+	var number = 100;
+	var result = [];
+	for(var i=1; i <= number; i++){
+		if(i%4 == 0 && i%7 == 0){
+	  	result.push('<b>marcopolo</b>');
+	  } else if(i % 4 == 0){
+	  	result.push('<b>marco</b>');
+	  } else if(i % 7 == 0){
+	  	result.push('<b>polo</b>');
+	  } else {
+	  	result.push(i);
+	  }
+	}
+	document.getElementById("marco-polo").innerHTML = result.join(', ')
+	
+</script>
+
+	</body>
+	</html>
